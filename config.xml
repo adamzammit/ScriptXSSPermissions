@@ -4,10 +4,10 @@
         <name>ScriptXSSPermissions</name>
         <type>plugin</type>
         <creationDate>2023-08-10</creationDate>
-        <last_update>2023-08-10</last_update>
+        <last_update>2023-08-18</last_update>
         <author>Adam Zammit</author>
         <authorUrl>https://github.com/adamzammit/ScriptXSSPermissions</authorUrl>
-        <version>1.0.0</version>
+        <version>1.0.1</version>
         <license>GPL 3.0</license>
         <description><![CDATA[Allow setting permissions to add scripts to a question and XSS filtering on a user by user basis]]></description>
     </metadata>

@@ -68,7 +68,12 @@ class ScriptXSSPermissions extends LimeSurvey\PluginManager\PluginBase
     public function beforeControllerAction()
     {
         $controller = $this->getEvent()->get('controller');
-        if ($controller === 'questionAdministration') {
+        if (
+            in_array(
+                $controller,
+                [ 'questionAdministration', 'surveyAdministration', 'admin' ]
+            )
+        ) {
             $this->setPermissions();
         }
     }
