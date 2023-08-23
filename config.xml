@@ -7,7 +7,7 @@
         <last_update>2023-08-23</last_update>
         <author>Adam Zammit</author>
         <authorUrl>https://github.com/adamzammit/ScriptXSSPermissions</authorUrl>
-        <version>1.0.2</version>
+        <version>1.0.3</version>
         <license>GPL 3.0</license>
         <description><![CDATA[Allow setting permissions to add scripts to a question and XSS filtering on a user by user basis]]></description>
     </metadata>

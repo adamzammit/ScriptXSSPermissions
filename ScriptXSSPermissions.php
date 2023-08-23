@@ -68,6 +68,7 @@ class ScriptXSSPermissions extends LimeSurvey\PluginManager\PluginBase
     public function beforeControllerAction()
     {
         $controller = $this->getEvent()->get('controller');
+        $action = $this->getEvent()->get('action');
         if (
             in_array(
                 $controller,
@@ -77,7 +78,7 @@ class ScriptXSSPermissions extends LimeSurvey\PluginManager\PluginBase
                     'admin',
                     'quotas',
                 ]
-            )
+            ) && $action !== 'globalsettings'
         ) {
             $this->setPermissions();
         }
