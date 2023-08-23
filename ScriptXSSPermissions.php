@@ -71,7 +71,12 @@ class ScriptXSSPermissions extends LimeSurvey\PluginManager\PluginBase
         if (
             in_array(
                 $controller,
-                [ 'questionAdministration', 'surveyAdministration', 'admin' ]
+                [
+                    'questionAdministration',
+                    'surveyAdministration',
+                    'admin',
+                    'quotas',
+                ]
             )
         ) {
             $this->setPermissions();
